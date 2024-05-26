@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kendo Club at UCSD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/UCSD_Kendo_Logo1 (1).png">
+
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/freelancer.css" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif; text-transform:none !important; font-weight:none !important;}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: 50% 20%;
+  background-size: cover;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("img/221127ZhengChienUCSDKendo5.jpg");
+  min-height: 50%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="z-index:99; font-size:15px !important;">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide" style="padding:5px !important;"><img src="img/UCSD_Black_Logo.png" style="height:49px;"><div class="w3-hide-medium w3-hide-small" style="float:right; padding-top:11px; padding-left:10px;">Kendo Club at UCSD</div></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="join.html" class="w3-bar-item w3-button">JOIN</a>
+          <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="gallery.html" class="w3-bar-item w3-button">GALLERY</a>
+          <a href="achievements.html" class="w3-bar-item w3-button" style="background-color:#00629B;color:white;">ACHIEVEMENTS</a>
+          <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index:100;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="join.html" onclick="w3_close()" class="w3-bar-item w3-button">JOIN</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+  <a href="achievements.html" onclick="w3_close()" class="w3-bar-item w3-button" style="background-color:#00629B;">ACHIEVEMENTS</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:15px;text-align:center;position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);width:90%;">
+    <span class="w3-jumbo w3-wide w3-hide-small" style="line-height:90px;"><u>Achievements</u></span><br>
+    <span class="w3-wide w3-hide-medium w3-hide-large" style="font-size:40px;"><u>Achievements</u></span><br>
+    </div>
+</header>
+
+
+<div style="padding:0px 50px !important;">
+    <section id="achievements">
+        <div class="container">
+            <div class="row">
+            </div>
+            <div class="row">
+                <!--//TODO: MAKE ICON FOR YEARS&UPDATE YEARS PAGE-->
+                <!-- To create more icons for years, make a pictures of size 900x650,
+                        background color of r:44, g:62, b:80, font color: white, font: Bauhaus 93,
+                        font size: 130. -->
+                <div class="col-sm-2 portfolio-item">
+                            <a href="#portfolioModal17" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/achievement/year17.png" class="img-responsive" alt="Cabin">
+                            </a>
+                 </div>
+                <div class="col-sm-2 portfolio-item">
+                            <a href="#portfolioModal16" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/achievement/year16.png" class="img-responsive" alt="Cabin">
+                            </a>
+                 </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal15" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year15.jpg" class="img-responsive" alt="Cabin">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal14" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year14.jpg" class="img-responsive" alt="Cabin">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal13" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year13.jpg" class="img-responsive" alt="Cabin">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year12.jpg" class="img-responsive" alt="Slice of cake">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year11.jpg" class="img-responsive" alt="Circus tent">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year10.jpg" class="img-responsive" alt="Game controller">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year9.jpg" class="img-responsive" alt="Safe">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year8.jpg" class="img-responsive" alt="Submarine">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year7.jpg" class="img-responsive" alt="Game controller">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year6.jpg" class="img-responsive" alt="Safe">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year5.jpg" class="img-responsive" alt="Submarine">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year4.jpg" class="img-responsive" alt="Submarine">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year3.jpg" class="img-responsive" alt="Game controller">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year2.jpg" class="img-responsive" alt="Safe">
+                    </a>
+                </div>
+                <div class="col-sm-2 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/achievement/year1.jpg" class="img-responsive" alt="Submarine">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                            class="fa fa-times"></i> Close</button>
+                        <br><br>
+                        <h2>2022-2023</h2>
+                        <hr class="star-primary">
+                        <img src="img/achievement/2023yuhihai.jpg" class="img-responsive img-centered" alt="">
+                        <h3>Yuhihai</h3>
+                        <p> 1st Place Women's Individuals - Seyeon Park</p>
+                        <p> 3rd Place Kyu Individuals - Levi Nguyen</p>
+                        <p> 3rd Place Non-bogu Individuals - Andrea Nguyen</p>
+                        <p> 1st Place Kyu teams - UCSD Team A (Brian Asami, Albert Ai, Chelina Wong)</p>
+                        <br>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                            class="fa fa-times"></i> Close</button>
+                        <br><br>
+                        <h2>2021-2022</h2>
+                        <hr class="star-primary">
+                        <img src="img/achievement/2021yuhihai.jpg" class="img-responsive img-centered" alt="">
+                        <h3>Yuhihai</h3>
+                        <p> 1st Place Women's Individuals - Seyeon Park</p>
+                        <p> 1st Place Kyu Individuals - Levi Nguyen</p>
+                        <p> 3rd Place Non-bogu Individuals - Adrian Tong</p>
+                        <p> 2nd Place Kyu teams - UCSD Team A (Timothy Liao, Chelina Wong, Daisuke Nishioka)</p>
+                        <p> 3rd Place Kyu Teams - UCSD Team B (Grant Liu, Evan Smith, Jonathan Klingspon)</p>
+                        <p> 3rd Place Co-ed Teams - UCSD Team (Takashi Yabuta, Heidi Shin, Seyeon Park, Levi Nguyen, Gabriel Ikezaki)</p>
+                        <br>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2018-2019</h2>
+                            <hr class="star-primary">
+                            <img src="img/achievement/2019shoryuhai.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/achievement/2019yuhihai.jpg" class="img-responsive img-centered" alt="">
+                            <h3>Shoryuhai</h3>
+                            <p> 2nd Place Team Tournament Shoryuhai - UCSD Team (Kimihiki Sugino, Angel Sambo, Takashi Yabuta, Richard Garcia, Stephen Chang)</p>
+                            <h3>Yuhihai</h3>
+                            <p> 2nd Place Kyu Tournament - Kimihiki Sugino </p>
+                            <p> 2nd Place Non-Bogu Tournament - Daisuke Nishioka </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2017-2018</h2>
+                            <hr class="star-primary">
+                            <img src="img/achievement/2018yuhihai.jpg" class="img-responsive img-centered" alt="">
+                            <h3>Yuhihai</h3>
+                            <p> 2nd Place Yudansha Tournament - Christopher Piggot </p>
+                            <p> 2nd Place Kyu Team Tournament - UCSD Kyu Team A </p>
+                            <p> 2nd Place Team Tournament - UCSD Team </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2016-2017</h2>
+                            <hr class="star-primary">
+                            <img src="img/achievement/2017yuhihai.jpg" class="img-responsive img-centered" alt="">
+                            <h3>Yuhihai</h3>
+                            <p> 1st Place Kyu Tournament - Jinsoo Park </p>
+                            <p> 3rd Place Kyu Tournament - Siddarth Govindan </p>
+                            <p> 3rd Place Women's Team Tournament - UCSD Women's Team A </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2015-2016</h2>
+                            <hr class="star-primary">
+                            <img src="img/achievement/2016shoryuhai.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/achievement/2016yuhihai.jpg" class="img-responsive img-centered" alt="">
+                            <h3>Shoryuhai</h3>
+                            <p> 3rd Place Team Tournament - UCSD Team A </p>
+                            <h3>Yuhihai</h3>
+                            <p> 2nd Place Non-Bogu Tournament - Christiane Pham </p>
+                            <p> 3rd Place Non-Bogu Tournament - Berlin Chen </p>
+                            <p> 2nd Place Kyu Tournament - Jinsoo Park </p>
+                            <p> 3rd Place Kyu Tournament - Nathan Tu </p>
+                            <p> 3rd Place Yudansha Tournament - Viet Nguyen </p>
+                            <p> 3rd Place Women's Team Tournament - UCSD Women's Team A </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2014-2015</h2>
+                            <hr class="star-primary">
+                            <img src="img/achievement/2015shoryuhai.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/achievement/2015yuhihai.jpg" class="img-responsive img-centered" alt="">
+                            <h3>Shoryuhai</h3>
+                            <p> 3rd Place Individuals Tournament - Viet Nguyen </p>
+                            <h3>Yuhihai</h3>
+                            <p> 3rd Place Team Tournament - UCSD Team A </p>
+                            <p> 2nd Place Women's Team Tournament - UCSD Women's Team </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2013-2014</h2>
+                            <hr class="star-primary">
+                            <img src="img/achievement/2014shoryuhai.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/achievement/2014yuhihai.jpg" class="img-responsive img-centered" alt="">
+                            <h3>Shoryuhai</h3>
+                            <p> 2nd Place Team Tournament - UCSD Team </p>
+                            <p> 1st Place Individuals Tournament - Shintaro Takahashi </p>
+                            <h3>Yuhihai</h3>
+                            <p> 1st Place Team Tournament - UCSD Team </p>
+                            <p> 2nd Place Yudansha Tournament - Kensuke Ukai </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2012-2013</h2>
+                            <hr class="star-primary">
+                            <img src="img/achievement/2013shoryuhai.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/achievement/2013yuhihai.jpg" class="img-responsive img-centered" alt="">
+                            <h3>Shoryuhai</h3>
+                            <p> 1st Place Team Tournament - UCSD Team </p>
+                            <p> 1st Place Individuals Tournament - Fumiaki Ayabe </p>
+                            <h3>Yuhihai</h3>
+                            <p> 3rd Place Team Tournament - UCSD Team </p>
+                            <p> 1st Place Yudansha Tournament - Albert Choi </p>
+                            <p> 1st Place Kyu Tournament - Joe Wang </p>
+                            <p> 3rd Place Kyu Tournament - Sharif Alaoui </p>
+                            <p> 3rd Place Women's Tournament - Christina Lin </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2011-2012</h2>
+                            <hr class="star-primary">
+                            <img src="img/achievement/2012shoryuhai.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/achievement/2012yuhihai.jpg" class="img-responsive img-centered" alt="">
+                            <h3>Shoryuhai</h3>
+                            <p> 2nd Place Team Tournament - UCSD Team </p>
+                            <p> 1st Place Individuals Tournament - Yannis Hachouf </p>
+                            <h3>Yuhihai</h3>
+                            <p> 1st Place Team Tournament - UCSD Team </p>
+                            <p> 3rd Place Yudansha Tournament - Shintaro Takahashi </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2010-2011</h2>
+                            <hr class="star-primary">
+
+                            <img src="img/achievement/2011shoryuhai.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/achievement/2011yuhihai.jpg" class="img-responsive img-centered" alt="">
+                            <h3>Shoryuhai</h3>
+                            <p> 1st Place Team Tournament - UCSD Team </p>
+                            <p> 3rd Place Individuals Tournament - Hojin Park </p>
+                            <h3>Yuhihai</h3>
+                            <p> 3rd Place Yudansha Tournament - Shintaro Takahashi </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2008-2009</h2>
+                            <hr class="star-primary">
+                            <div class="teamRoster">
+                                <ul>
+                                    <li>Hojin Park</li>
+                                    <li>Frank Michioka</li>
+                                    <li>Eric Takeshi Harada</li>
+                                    <li>Josn Lee</li>
+                                    <li>Teppei Shima</li>
+
+                                </ul>
+                            </div>
+                            <h3>Shoryuhai</h3>
+                            <p> 3rd Place Team Tournament - UCSD Team </p>
+                            <p> 3rd Place Individuals Tournament - Teppei Shima </p>
+                            <h3>Yuhihai</h3>
+                            <p> 3rd Place Yudansha Tournament - Hojin Park </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2007-2008</h2>
+                            <hr class="star-primary">
+                            <div class="teamRoster">
+                                <ul>
+                                    <li>Hojin Park</li>
+                                    <li>Taku Yamasaki</li>
+                                    <li>JeongKyoo Han</li>
+                                    <li>Minho Han</li>
+                                    <li>Takeshi Harada</li>
+                                </ul>
+                            </div>
+                            <h3>Shoryuhai</h3>
+                            <p> 2nd Place Team Tournament - UCSD Team </p>
+                            <h3>Yuhihai</h3>
+                            <p> 3rd Place Team Tournament - UCSD Team</p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2006-2007</h2>
+                            <hr class="star-primary">
+                            <img src="img/2006-grp.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/2006B.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/2007.jpg" class="img-responsive img-centered" alt="">
+                            <div class="teamRoster">
+                                <ul>
+                                    <li>Gene Kim</li>
+                                    <li>An Tamura</li>
+                                    <li>Keun-Ho Lee</li>
+                                    <li>Takumi Kato</li>
+                                    <li>Jeongkyoo Han</li>
+                                    <li>Taku Yamasaki</li>
+                                    <li>Hojin Park</li>
+                                    <li>Joseph Sugino</li>
+                                    <li>Mark Schultzel</li>
+                                    <li>Takeshi Harada</li>
+                                </ul>
+                            </div>
+                            <h3>Shoryuhai</h3>
+                            <p> 2nd Place Team Tournament - UCSD Team </p>
+                            <p> 3rd Place Individuals Tournament - Hojin Park </p>
+                            <h3>Yuhihai</h3>
+                            <p> 1st Place Team Tournament - UCSD Team </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2005-2006</h2>
+                            <hr class="star-primary">
+                            <div class="teamRoster">
+                                <ul>
+                                    <li>Takumi Kato</li>
+                                    <li>Ann Tamura</li>
+                                    <li>Gene Kim</li>
+                                    <li>Mio Shimizu</li>
+                                    <li>Young S. Cho</li>
+                                    <li>Tam Hoang</li>
+                                    <li>Mark Schultzel</li>
+                                    <li>Taku Yamasaki</li>
+                                    <li>Kuen Ho Lee</li>
+                                    <li>Matt Schultzel</li>
+                                </ul>
+                            </div>
+                            <h3>Shoryuhai</h3>
+                            <p> 2nd Place Team Tournament - UCSD Team A </p>
+                            <p> 3rd Place Team Tournament - UCSD Team B </p>
+                            <p> 2nd Place Individuals Tournament - Ann Tamura </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2004-2005</h2>
+                            <hr class="star-primary">
+                            <div class="teamRoster">
+                                <ul>
+                                    <li>Takumi Kato</li>
+                                    <li>Sachiko Tamura</li>
+                                    <li>Gene Kim</li>
+                                    <li>Mio Shimizu</li>
+                                    <li>Young Shik Cho</li>
+                                </ul>
+                            </div>
+                            <h3>Shoryuhai</h3>
+                            <p> 1st Place Team Tournament - UCSD Team </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                            <br><br>
+                            <h2>2003-2004</h2>
+                            <hr class="star-primary">
+                            <div class="teamRoster">
+                                <ul>
+                                    <li>Takumi Kato</li>
+                                    <li>Mio Shimizu</li>
+                                    <li>Young Shik Cho</li>
+                                    <li>Hisami Hayashi</li>
+                                    <li>Randall Iwashita</li>
+                                </ul>
+                            </div>
+                            <h3>Shoryuhai</h3>
+                            <p> 2nd Place Team Tournament - UCSD Team </p>
+                            <p> 2nd Place Individuals Tournament - Randall Iwashita </p>
+                            <p> 3rd Place Individuals Tournament - Young Shik Cho </p>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/freelancer.min.js"></script>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>

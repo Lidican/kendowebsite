@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kendo Club at UCSD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/UCSD_Kendo_Logo1 (1).png">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("img/190420WearArmorKendoUCSD10-min.jpg");
+  min-height: 100%;
+  overflow:auto;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="z-index:99;">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide" style="padding:5px !important;"><img src="img/UCSD_Black_Logo.png" style="height:49px;"><div class="w3-hide-medium w3-hide-small" style="float:right; padding-top:11px; padding-left:10px;">Kendo Club at UCSD</div></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="join.html" class="w3-bar-item w3-button" style="background-color:#00629B;color:white;">JOIN</a>
+      <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="gallery.html" class="w3-bar-item w3-button">GALLERY</a>
+      <a href="achievements.html" class="w3-bar-item w3-button">ACHIEVEMENTS</a>
+      <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index:100;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="join.html" onclick="w3_close()" class="w3-bar-item w3-button" style="background-color:#00629B">JOIN</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+  <a href="achievements.html" onclick="w3_close()" class="w3-bar-item w3-button">ACHIEVEMENTS</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+
+<!-- Desktop front page -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min w3-hide-small">
+  <div class="w3-display-left w3-text-white" style="padding:15px;text-align:center;position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);width:100%;">
+    <img src="img/white_logo.png" style="width:18%;min-width:150px;"><br><br>
+    <span class="w3-jumbo" style="line-height:90px;">Kendo Club at UCSD</span><br>
+    <span class="w3-large">Practices every Saturday from 12:00PM - 2:00PM in the <a href="https://www.google.com/maps/place/2999+Scholars+Ln,+La+Jolla,+CA+92093/@32.8767443,-117.2422553,18.47z" target="_blank">Rec Gym</a></span>
+    <p><a href="join.html" class="w3-button w3-white w3-padding-medium w3-large w3-margin-top w3-hover-opacity-off" style="border-radius:6px;opacity:0.8;">Join the club</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFZ40Gwlq3M7KDjnGfD3KwXWhTZaH1U4D9IuEG45QFVxiCJw/viewform?usp=sf_link
+    " class="w3-button w3-white w3-padding-medium w3-large w3-margin-top w3-hover-opacity-off" style="border-radius:6px;opacity:0.8;">Join our mailing list</a></p>
+    <div style="padding:20px;">
+      <a href="https://www.instagram.com/ucsd_kendo/" target="_blank"><img class="fa w3-hover-opacity" style="height:50px; padding:0px 5px" src="img/instagram-logo.png"></a>
+      <a href="https://discord.gg/WjDFjQWMKw" target="_blank"><img class="fa w3-hover-opacity" style="height:40px; padding:0px 5px" src="img/discord-logo.png"></a>
+      <a href="mailto:teamucsd.kendo@gmail.com" target="_blank"><img class="fa w3-hover-opacity" style="height:50px; padding:0px 5px" src="img/email.png"></a>
+      <a href="https://linktr.ee/ucsdkendo" target="_blank"><img class="fa w3-hover-opacity" style="height:45px; padding:0px 5px" src="img/linktree-logo.png"></a>
+    </div>
+  </div> 
+</header>
+
+<!-- Mobile front page -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min w3-hide-large w3-hide-medium">
+  <div class="w3-display-left w3-text-white" style="padding:15px;text-align:center;position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);width:100%;">
+    <img src="img/white_logo.png" width="150px"><br><br>
+    <span style="font-size:40px; line-height:50px;">Kendo Club at UCSD</span><br><br>
+    <span style="font-size:20px; line-height:20px;">Practices every Saturday from 12:00PM - 2:00PM in the <a href="https://www.google.com/maps/place/2999+Scholars+Ln,+La+Jolla,+CA+92093/@32.8767443,-117.2422553,18.47z" target="_blank">Rec Gym</a></span>
+    <p><a href="join.html" class="w3-button w3-white w3-padding-medium w3-large w3-margin-top w3-hover-opacity-off" style="border-radius:6px;opacity:0.8;">Join the club</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFZ40Gwlq3M7KDjnGfD3KwXWhTZaH1U4D9IuEG45QFVxiCJw/viewform?usp=sf_link
+    " class="w3-button w3-white w3-padding-medium w3-large w3-margin-top w3-hover-opacity-off" style="border-radius:6px;opacity:0.8;">Join our mailing list</a></p>
+    <div style="padding:10px">
+      <a href="https://www.instagram.com/ucsd_kendo/" target="_blank"><img class="fa w3-hover-opacity" style="height:50px; padding:0px 5px" src="img/instagram-logo.png"></a>
+      <a href="https://discord.gg/WjDFjQWMKw" target="_blank"><img class="fa w3-hover-opacity" style="height:40px; padding:0px 5px" src="img/discord-logo.png"></a>
+      <a href="mailto:teamucsd.kendo@gmail.com" target="_blank"><img class="fa w3-hover-opacity" style="height:50px; padding:0px 5px" src="img/email.png"></a>
+      <a href="https://linktr.ee/ucsdkendo" target="_blank"><img class="fa w3-hover-opacity" style="height:45px; padding:0px 5px" src="img/linktree-logo.png"></a>
+    </div>
+  </div> 
+</header>
+
+</body>
+</html>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>

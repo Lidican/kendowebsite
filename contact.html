@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kendo Club at UCSD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/UCSD_Kendo_Logo1 (1).png">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif; text-transform:none !important; font-weight:none !important;}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: 50% 10%;
+  background-size: cover;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img/221127ZhangLoncUCSDKendo5.jpg");
+  min-height: 50%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="z-index:99; font-size:15px !important;">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-wide" style="padding:5px !important;"><img src="img/UCSD_Black_Logo.png" style="height:49px;"><div class="w3-hide-medium w3-hide-small" style="float:right; padding-top:11px; padding-left:10px;">Kendo Club at UCSD</div></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="join.html" class="w3-bar-item w3-button">JOIN</a>
+        <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">GALLERY</a>
+        <a href="achievements.html" class="w3-bar-item w3-button">ACHIEVEMENTS</a>
+        <a href="contact.html" class="w3-bar-item w3-button" style="background-color:#00629B;color:white;">CONTACT</a>
+      </div>
+  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none;z-index:100;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="join.html" onclick="w3_close()" class="w3-bar-item w3-button">JOIN</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+  <a href="achievements.html" onclick="w3_close()" class="w3-bar-item w3-button">ACHIEVEMENTS</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button" style="background-color:#00629B;">CONTACT</a>
+</nav>
+
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:15px;text-align:center;position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);width:90%;">
+    <span class="w3-jumbo w3-wide w3-hide-small" style="line-height:90px;"><u>Contact Us</u></span><br>
+    <span class="w3-wide w3-hide-medium w3-hide-large" style="font-size:40px;"><u>Contact Us</u></span><br>
+    </div>
+</header>
+
+<div class="w3-container" style="padding:50px 15px">
+  <div class="w3-row-padding" style="text-align:center;">
+    <div class="w3-col m6" style="display:inline-block; float:none !important; text-align:middle; vertical-align:middle; max-width:500px; padding: 0px 0px 30px">
+      <h1>
+        Contact Us
+      </h1>
+      <div style="text-align:center">
+          <a href="https://discord.gg/WjDFjQWMKw" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Join our Discord</button></a>
+      </div>
+      <br>
+      <div style="text-align:center">
+          <a href="https://www.instagram.com/ucsd_kendo/" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Follow our Instagram</button></a>
+      </div>
+      <br>
+      <div style="text-align:center">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFZ40Gwlq3M7KDjnGfD3KwXWhTZaH1U4D9IuEG45QFVxiCJw/viewform?usp=sf_link" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Join our mailing list</button></a>
+      </div>
+      <br>
+      <div style="text-align:center">
+          <a href="https://linktr.ee/ucsdkendo" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Visit our Linktree</button></a>
+      </div>
+      <br>
+      <div style="text-align:center">
+          <a href="mailto:teamucsd.kendo@gmail.com" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Send us an email</button></a>
+      </div>
+    </div>
+    <div class="w3-col m6" style="width:auto !important; display:inline-block;float:none !important;padding:0px 20px; text-align:middle;">
+      <img class="w3-image w3-round-large"  src="img/190420SFighttKendoUCSDPo-min.jpg" alt="Buildings" style="max-height:550px;">
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>

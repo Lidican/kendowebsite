@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kendo Club at UCSD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/UCSD_Kendo_Logo1 (1).png">
+
+<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="css/freelancer.css" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif; text-transform:none !important; font-weight:none !important;}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: 50% 15%;
+  background-size: cover;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("img/190420ChenFiightKendoUCSD-min.jpg");
+  min-height: 50%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="z-index:99; font-size:15px !important;">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide" style="padding:5px !important;"><img src="img/UCSD_Black_Logo.png" style="height:49px;"><div class="w3-hide-medium w3-hide-small" style="float:right; padding-top:11px; padding-left:10px;">Kendo Club at UCSD</div></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="join.html" class="w3-bar-item w3-button">JOIN</a>
+          <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="gallery.html" class="w3-bar-item w3-button" style="background-color:#00629B;color:white;">GALLERY</a>
+          <a href="achievements.html" class="w3-bar-item w3-button">ACHIEVEMENTS</a>
+          <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index:100;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="join.html" onclick="w3_close()" class="w3-bar-item w3-button">JOIN</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button" style="background-color:#00629B;">GALLERY</a>
+  <a href="achievements.html" onclick="w3_close()" class="w3-bar-item w3-button">ACHIEVEMENTS</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:15px;text-align:center;position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);width:90%;">
+      <span class="w3-jumbo w3-wide w3-hide-small" style="line-height:90px;"><u>Gallery</u></span><br>
+      <span class="w3-wide w3-hide-medium w3-hide-large" style="font-size:40px;"><u>Gallery</u></span><br>
+    </div>
+</header>
+
+<div style="padding: 50px">
+    <!-- Gallery Grid Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/190420CaverlyFightKendoUCSD4Po-min.jpg" class="img-responsive">
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/190420SFighttKendoUCSDPo-min.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/190420GiAttachKendoUCSD3Po-min.jpg" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/190420ChenFiightKendoUCSD-min.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/190420WearArmorKendoUCSD10-min.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/221127ZhangLoncUCSDKendo5.jpg" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/2023YuhihaiTeam.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/2023YuhihaiTrophy.JPG" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/2023Seniors.JPG" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/2022Tabling.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/2023SDKBTournament.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/2022NewYearParty.JPG" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/CherryBlossomDemonstration.JPG" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/2022YuhihaiCarry.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <img src="img/2022YuhihaiTeam.jpg" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#galleryModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/gallery/2019shoryuhai2.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#galleryModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/gallery/2019yuhihai5.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#galleryModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/gallery/Spammusubi2019_i.jpg" class="img-responsive">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
+<div class="portfolio-modal modal fade" id="galleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Shoryuhai</h2>
+                        <hr class="star-primary">
+                        <img src="img/gallery/2019shoryuhai3.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/gallery/2019shoryuhai4.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/gallery/2019shoryuhaimixteam_i.jpg" class="img-responsive img-centered"
+                            alt="">
+                        <p>2019 Shoryuhai Intercollegiate Kendo Tournament.</p>
+                        <ul class="list-inline item-details">
+                            <li><strong>Date:</strong>
+                                March 2019
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="galleryModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Yuhihai</h2>
+                        <hr class="star-primary">
+                        <img src="img/gallery/2019yuhihai4.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/gallery/2019yuhihai3.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/gallery/2019yuhihai2.jpg" class="img-responsive img-centered" alt="">
+                        <p>2019 Yuhihai Intercollegiate Kendo Tournament.</p>
+                        <ul class="list-inline item-details">
+                            <li><strong>Date:</strong>
+                                February 2019
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="galleryModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Spam Musubi Fundraiser</h2>
+                        <hr class="star-primary">
+                        <img src="img/gallery/2019spamfund2.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/gallery/2019spamfund3.jpg" class="img-responsive img-centered" alt="">
+                        <p>2019 Spam Musubi Fundriaser.</p>
+                        <ul class="list-inline item-details">
+                            <li><strong>Date:</strong>
+                                February 2019
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/freelancer.min.js"></script>

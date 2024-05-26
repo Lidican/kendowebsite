@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kendo Club at UCSD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/UCSD_Kendo_Logo1 (1).png">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif; text-transform:none !important; font-weight:none !important;}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: 50% 30%;
+  background-size: cover;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("img/190420WearArmorKendoUCSD10-min.jpg");
+  min-height: 50%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="z-index:99; font-size:15px !important;">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-wide" style="padding:5px !important;"><img src="img/UCSD_Black_Logo.png" style="height:49px;"><div class="w3-hide-medium w3-hide-small" style="float:right; padding-top:11px; padding-left:10px;">Kendo Club at UCSD</div></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="join.html" class="w3-bar-item w3-button" style="background-color:#00629B;color:white;">JOIN</a>
+        <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">GALLERY</a>
+        <a href="achievements.html" class="w3-bar-item w3-button">ACHIEVEMENTS</a>
+        <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+      </div>
+  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none;z-index:100;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="join.html" onclick="w3_close()" class="w3-bar-item w3-button", style="background-color:#00629B;">JOIN</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+  <a href="achievements.html" onclick="w3_close()" class="w3-bar-item w3-button">ACHIEVEMENTS</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:15px;text-align:center;position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);width:90%;">
+    <span class="w3-jumbo w3-wide w3-hide-small" style="line-height:90px;"><u>Join Kendo Club</u></span><br>
+    <span class="w3-wide w3-hide-medium w3-hide-large" style="font-size:40px;"><u>Join Kendo Club</u></span><br>
+  </div>
+</header>
+
+<div class="w3-container" style="padding:50px 15px">
+  <div class="w3-row-padding" style="text-align:center;">
+    <div class="w3-col m6" style="display:inline-block; float:none !important; text-align:left; vertical-align:middle;">
+      <h2>Practice Schedule</h2>
+      <p><h4>
+          Practice is held every Saturday from 12:00 PM to 2:00 PM in the UCSD Rec Gym. Registration is handled through the UCSD Recreation department on a per-quarter basis; please register through the signup links below.
+      </h4></p>
+      <div style="text-align:center; padding:5px;">
+        <a href="https://rec.ucsd.edu/Program/GetProgramDetails?courseId=911a0897-60c1-4faa-a610-f205678c92fa&semesterId=283aab17-7e8a-45e1-824c-2dd13717b0cb" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Beginner Class Registration</button></a>
+      </div>
+      <div style="text-align:center; padding:5px;">
+        <a href="https://rec.ucsd.edu/Program/GetProgramDetails?courseId=11057f62-b6ca-4333-a8b8-a4b219ab6c69&semesterId=283aab17-7e8a-45e1-824c-2dd13717b0cb" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Advanced Class Registration</button></a>
+      </div>
+      <p><h4>
+          Please read through the <a href="#faq">Beginner FAQ</a> and <a href="#resources">Resources</a> below for important information before your first practice!
+      </h4></p>
+      <br>
+      <h2>Additional Practices</h2>
+      <p><h4>
+          The UCSD Kendo Club is proudly affiliated with San Diego Kendo Bu, an off-campus kendo dojo where additional optional practices are held on Tuesdays and Thursdays. Please visit the <a href="https://www.sdkendo.com/">San Diego Kendo Bu website</a> for more information on how to join.
+      </h4></p>
+    </div>
+    <div class="w3-col m6 w3-hide-small" style="width:auto !important; display:inline-block;float:none !important; vertical-align:middle !important;">
+      <div style="width: 100%"><iframe height="600px" width="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=2999%20Scholars%20Ln,%20La%20Jolla,%20CA%2092093+(UCSD%20Rec%20Gym)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="w3-container" style="padding:0px 15px">
+  <div style="text-align:center;">
+    <h1 id="faq">Beginner FAQ</h1>
+
+    <div style="display:inline-block;float:none !important; max-width:1000px; text-align:left;">
+      <button class="accordion">What is Kendo?</button>
+      <div class="panel">
+        <h4>Kendo (translating to "way of the sword") is a modern Japanese martial art descended from the samurai swordsmanship of feudal Japan. In kendo, we practice with bamboo swords <i>(shinai)</i> and protective armor <i>(bogu)</i> which allow for full delivery of strikes without injury. Kendo is used by many as a way to cultivate a strong mind, body, and spirit through the application of the principles of the sword.</h4>
+      </div>
+
+      <button class="accordion">Can I join without any prior experience?</button>
+      <div class="panel">
+        <h4>Of course! We welcome all skill levels to join practice. The vast majority of our club members started kendo for the first time through the UCSD Kendo Club.</h4>
+      </div>
+
+      <button class="accordion">I have experience in other martial arts. Will this help me in Kendo?</button>
+      <div class="panel">
+        <h4>Welcome! Kendo is a unique martial art which uses very particular movements and muscles, so techniques from other martial arts rarely carry over to kendo. We recommend approaching kendo with an open mind.</h4>
+      </div>
+
+      <button class="accordion">What do I need to bring to my first practice?</button>
+      <div class="panel">
+        <h4>You will need to bring $30 (Venmo preferred) to your first practice to purchase your own shinai (bamboo sword). Try to show up early, as shinai purchase lines can get pretty long. Besides that, just show up in comfortable clothes that you can move in (activewear/workout clothes - not jeans!), and bring a water bottle if you need it. Purchase of uniform and armor will not be necessary for a while.</h4>
+      </div>
+
+      <button class="accordion">What will I be doing on my first day?</button>
+      <div class="panel">
+        <h4>On your first day, you can expect to learn basic etiquette, footwork, and swings, as well as the general flow and routines of practice. You'll also learn some basic striking routines, where you practice hitting senior students who are wearing armor.</h4>
+      </div>
+
+      <button class="accordion">Do I need to buy the uniform/armor?</button>
+      <div class="panel">
+        <h4>You won't need to purchase the uniform <i>(gi and hakama)</i> or armor <i>(bogu)</i> for a while after starting. You'll spend the next few practices honing your basics, after which the sensei (head teacher) will decide if you are ready to move on to practicing in gi and hakama and/or bogu.</h4>
+      </div>
+
+      <button class="accordion">Why is there so much shouting during practice?</button>
+      <div class="panel">
+        <h4>Kendo is not a very quiet martial art, as practitioners use a loud shout called <i>kiai</i> to express fighting spirit while striking. Kiai is necessary for proper form, and you'll practice kiai on your first day. If you're feeling shy, don't worry - it gets really natural with time!</h4>
+      </div>
+
+      <button class="accordion">Does it hurt when you get hit?</button>
+      <div class="panel">
+        <h4>Kendo, when done properly, has very little risk of injury. The armor that we wear is very well padded and protects the target areas more than adequately. When you first get into armor and start receiving strikes, they may feel jarring (but not painful) at first, but this feeling goes away with time.</h4>
+      </div>
+
+      <button class="accordion">Do I need to speak Japanese to do Kendo?</button>
+      <div class="panel">
+        <h4>Since Kendo is a Japanese martial art, many terms for equipment, strikes, and commands used in Kendo are in Japanese. However, any previous fluency or ability to speak or understand Japanese is not required. All of the terms and commands you need to know will be taught to you over time. If you'd like a head start, check out the Kendo Phrase Action Table in the <a href="#resources">Resources</a> section below. If you have any questions about what certain terms mean, feel free to ask a sensei or senior student.</h4>
+      </div>
+
+      <button class="accordion">Why can you only hit certain targets, instead of anywhere on the body?</button>
+      <div class="panel">
+        <h4>While kendo is descended from the wartime swordsmanship of feudal Japan, modern kendo as we know it today developed during the peaceful era of the Tokugawa shogunate. Swordsmanship techniques of this time began to shift away from killing techniques, instead moving towards the graceful development of discipline and character. While the limitations of modern kendo distance it from samurai swordsmanship, the <a href="https://www.kendo-fik.org/old/english-page/english-page2/concept-of-Kendo.htm" target="_blank">purpose of kendo</a> is to develop and improve the mind, rather than authentically replicate feudal swordsmanship techniques. Please refer to the <a href="https://www.kendo.or.jp/en/knowledge/kendo-history/" target="_blank">All Japan Kendo Federation's history of kendo</a> for further information.</h4>
+      </div>
+
+      <button class="accordion">Do I have to be in shape to do Kendo?</button>
+      <div class="panel">
+        <h4>While being in shape will definitely help with the exercises, it is by no means necessary as a beginner. All of the exercises will become easier over time if you come to practice consistently. You may even find a new running/workout buddy in the club and become motivated to exercise outside of practice!</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="w3-container" style="padding:50px 15px 100px;">
+  <div style="text-align:center;">
+    <h1 id="resources">Additional Resources</h1>
+    <div style="text-align:center; padding:5px;">
+      <a href="https://docs.google.com/document/d/1wAt_yeuZ-3YhDqjJ2WMPkiKMN7heKsEGSP5KxSABNwQ/edit?usp=sharing" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Do's and Don'ts of Kendo Practice</button></a>
+    </div>
+    <div style="text-align:center; padding:5px;">
+      <a href="https://docs.google.com/document/d/1lkgHKpyaiyVL4BP_CkHhYvfbwWAhqsrurTgNp7FwfIc/edit?usp=sharing" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Beginner Warmups and Lining Up</button></a>
+    </div>
+    <div style="text-align:center; padding:5px;">
+      <a href="https://docs.google.com/document/d/1W-aOJNLrqbUWRvZnxFiyaS_cRSIMS6KnxVjhCa4TEDA/edit?usp=drive_link" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Kendo Phrase Action Table</button></a>
+    </div>
+    <div style="text-align:center; padding:5px;">
+      <a href="https://docs.google.com/document/d/1GKTdk_3ThTWWwRksis8Yi4r7lbD9HOJXMH8SMRCZwv8/edit?usp=drive_link" target="_blank"><button class="w3-button w3-black w3-padding-large" style="border-radius:6px;">Kendo Etiquette Guide</button></a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius:12px; 
+  font-size:20px; 
+  padding-left:25px; 
+  border-bottom:2px solid white;
+  border-top:2px solid white;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 20px;
+  color: #777;
+  float: right;
+  display:block;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+</style>
+
+</body>
+</html>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
